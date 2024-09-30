@@ -1,7 +1,7 @@
-#include <iostream>;
+/* #include <iostream>;
 using namespace std;
 
-int main() {
+void main() {
 	cout << "Task 1: Even or Odd Number" << endl << "Description: The user inputs a number.Determine if it is even or odd." << endl << endl;
 	int a;
 	char choice;
@@ -24,4 +24,4 @@ int main() {
 	} 
 		while (choice == 'y' || choice == 'Y');
 		cout << "Thank you for using the programm" << endl;
-}
+} */
