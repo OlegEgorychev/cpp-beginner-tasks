@@ -39,12 +39,16 @@ void task2() {
 
 void task3() {
 	cout << "Task 3: Find the Maximum Element in an Array" << endl << "Description: Given N integers in an array. Find the maximum number in the array." << endl;
-	int numbers[3];
-	for (int i = 0; i <= 4; i++) {
-		cout << "Enter elevent " << i + 1 << ": ";
-		cin >> numbers[i];
-	}
+	int numbers[3]{};
 	
+	for (int i = 0; i <= 4; i++) {
+		cout << "Enter array's element " << i + 1 << ": " << endl;
+		cin >> numbers[];
+		cout << numbers[];
+	}
+
+
+
 }
 
 int main() {
