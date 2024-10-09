@@ -81,16 +81,34 @@ void task2() {
 
 void task3() {
 	displayTaskHeader(2);
-	int numbers[3]{ 0, 1, 10 };
+	int numbers[3]{};
 	
 	for (int i = 0; i <= 2; i++) {
 		cout << "Enter array's element " << i + 1 << ": " << endl;
 		cin >> numbers[i];
-	}
+		}
 		
-		cout << numbers[0,1,2] << endl;}
+	cout << "Elements: ";
+	for (int i = 0; i < 3; i++) {
+		cout << numbers[i] << ", ";
+	}
+	cout << endl;
+
+	int maxElement = numbers[0];
+
+	for (int i = 1; i <= 2; i++)
+		if (numbers[i] > maxElement) {
+			maxElement = numbers[i];
+		}
+	cout << "The maximum element is: " << maxElement << endl;
+}
 
 void task4() {
+	int numbers{};
+	cin >> numbers;
+}
+
+void task11() {
 	displayTaskHeader(3);
 	double centimeters;
 	cout << "Enter the length in centimeters to find out the length in inches: ";
