@@ -4,7 +4,7 @@ using namespace std;
 string taskTitles[]{
 	"Task 1: Even or Odd Number",
 	"Task 2: Sum of Numbers from 1 to N",
-	"Task 3: Find the Maximum Element in an Array - IN PROGRESS",
+	"Task 3: Find the Maximum Element in an Array",
 	"Task 4: Count Positive Numbers in an Array",
 	"Task 5: Sum of Array Elements",
 	"Task 6: Simple Calculator",
@@ -104,8 +104,7 @@ void task3() {
 }
 
 void task4() {
-	int numbers{};
-	cin >> numbers;
+
 }
 
 void task11() {
