@@ -104,11 +104,23 @@ void task3() {
 }
 
 void task4() {
-
+	displayTaskHeader(3);
+	int numbers[5]{};
+	
+	
+	for (int i = 0; i < 5; i++) {
+		cout << "Input array's element " << i + 1 << ": ";
+		cin >> numbers[i];
+	}
+	for (int i = 0; i < 5; i++) {
+		if (numbers[0] >= 0) {
+			
+		}
+	}
 }
 
 void task11() {
-	displayTaskHeader(3);
+	displayTaskHeader(10);
 	double centimeters;
 	cout << "Enter the length in centimeters to find out the length in inches: ";
 	cin >> centimeters;
