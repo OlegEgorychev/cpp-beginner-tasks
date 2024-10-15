@@ -122,6 +122,25 @@ void task4() {
 	cout << "Positive numbers = " << positive_numbers << endl;
 }
 
+void task5() {
+	displayTaskHeader(4);
+	int numbers[5]{};
+	int sum = 0;
+
+	
+	for (int i = 0; i <= 0; i++) {
+		cout << "Input number " << i + 1 << ": ";
+		cin >> numbers[i];
+	}
+		
+
+
+	for (int i = 0; i < 5; i++) {
+		sum = sum + numbers[i];
+	}
+	cout << sum;
+}
+
 void task11() {
 	displayTaskHeader(10);
 	double centimeters;
