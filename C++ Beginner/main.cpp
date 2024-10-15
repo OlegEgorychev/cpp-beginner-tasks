@@ -112,11 +112,14 @@ void task4() {
 		cout << "Input array's element " << i + 1 << ": ";
 		cin >> numbers[i];
 	}
+	int positive_numbers = 0;
+
 	for (int i = 0; i < 5; i++) {
-		if (numbers[0] >= 0) {
-			
+		if (numbers[i] >= 0) {
+			positive_numbers ++;
 		}
 	}
+	cout << "Positive numbers = " << positive_numbers << endl;
 }
 
 void task11() {
