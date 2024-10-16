@@ -106,7 +106,7 @@ void task3() {
 void task4() {
 	displayTaskHeader(3);
 	int numbers[5]{};
-	
+
 	
 	for (int i = 0; i < 5; i++) {
 		cout << "Input array's element " << i + 1 << ": ";
@@ -127,18 +127,14 @@ void task5() {
 	int numbers[5]{};
 	int sum = 0;
 
-	
-	for (int i = 0; i <= 0; i++) {
+	for (int i = 0; i < 5; i++) {
 		cout << "Input number " << i + 1 << ": ";
 		cin >> numbers[i];
 	}
-		
-
-
+	
 	for (int i = 0; i < 5; i++) {
-		sum = sum + numbers[i];
+		cout << numbers[i] << " + ";
 	}
-	cout << sum;
 }
 
 void task11() {
@@ -171,6 +167,9 @@ int main() {
 			break;
 		case 4:
 			task4();
+			break;
+		case 5:
+			task5();
 			break;
 	}
 }
