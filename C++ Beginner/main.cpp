@@ -144,6 +144,10 @@ void task5() {
 	
 }
 
+void task6() {
+	cout << "Enter two numbers and operation for calculation";
+}
+
 void task11() {
 	displayTaskHeader(10);
 	double centimeters;
@@ -177,6 +181,9 @@ int main() {
 			break;
 		case 5:
 			task5();
+			break;
+		case 6:
+			task6();
 			break;
 	}
 }
