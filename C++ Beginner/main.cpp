@@ -136,11 +136,11 @@ void task5() {
 		cout << numbers[i];
 		sum = sum + numbers[i];
 		if (i < 4) {
-			cout << "+";
+			cout << " + ";
 		}
 	}
 
-	cout << " = " << sum;
+	cout << " = " << sum << endl;
 	
 }
 
