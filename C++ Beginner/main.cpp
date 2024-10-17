@@ -133,8 +133,15 @@ void task5() {
 	}
 	
 	for (int i = 0; i < 5; i++) {
-		cout << numbers[i] << " + ";
+		cout << numbers[i];
+		sum = sum + numbers[i];
+		if (i < 4) {
+			cout << "+";
+		}
 	}
+
+	cout << " = " << sum;
+	
 }
 
 void task11() {
