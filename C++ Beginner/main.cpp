@@ -168,16 +168,16 @@ void task6() {
 
 		switch (choice) {
 		case 1:
-			cout << a + b;
+			cout << "result: " << a + b;
 			break;
 		case 2:
-			cout << a - b;
+			cout << "result: " << a - b;
 			break;
 		case 3:
-			cout << a * b;
+			cout << "result: " << a * b;
 			break;
 		case 4:
-			cout << a / b;
+			cout << "result: " << a / b;
 			break;
 		}
 	
