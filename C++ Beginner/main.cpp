@@ -145,7 +145,42 @@ void task5() {
 }
 
 void task6() {
-	cout << "Enter two numbers and operation for calculation";
+	cout << "Enter two numbers and operation for calculation" << endl;
+	
+	int a;
+	int b;
+	
+	cout << "Enter number 'a': " ;
+	cin >> a;
+	cout << endl;
+
+	cout << "Enter number 'b': ";
+	cin >> b;
+	cout << endl;
+
+	cout << "Choice operation (+, -, *, /) " << endl;
+		cout << "1. '+' " << endl <<
+				  "2. '-' " << endl <<
+				  "3. '*' " << endl <<
+				  "4. '/' " << endl;
+		int choice;
+		cin >> choice;
+
+		switch (choice) {
+		case 1:
+			cout << a + b;
+			break;
+		case 2:
+			cout << a - b;
+			break;
+		case 3:
+			cout << a * b;
+			break;
+		case 4:
+			cout << a / b;
+			break;
+		}
+	
 }
 
 void task11() {
@@ -163,7 +198,7 @@ int main() {
 
 	displayAvailableTasks();
 
-	cout << "Choice task:";
+	cout << "Choice task: ";
 	cin >> choice;
 
 	switch (choice) {
