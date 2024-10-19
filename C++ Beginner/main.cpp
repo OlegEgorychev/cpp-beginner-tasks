@@ -183,6 +183,15 @@ void task6() {
 	
 }
 
+void task7() {
+	cout << "Enter a number for multiple table: ";
+	int a;
+	cin >> a;
+	for (int i = 1; i <= 10; i++) {
+		cout << a << " * " << i << " = " << a * i << endl;
+	}
+}
+
 void task11() {
 	displayTaskHeader(10);
 	double centimeters;
@@ -219,6 +228,9 @@ int main() {
 			break;
 		case 6:
 			task6();
+			break;
+		case 7:
+			task7();
 			break;
 	}
 }
