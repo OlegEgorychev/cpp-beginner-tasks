@@ -192,6 +192,24 @@ void task7() {
 	}
 }
 
+void task8() {
+
+	int numbers[5];
+
+	for (int i = 0; i < 5; i++) {
+		cout << "Enter number " << i+1 << ": " << endl;
+		cin >> numbers[i];
+	}
+
+	cout << "Entered numbers in revert order: ";
+
+	for (int i = 4; i >= 0; i--) {
+		cout << numbers[i] << ", ";
+	}
+	
+
+}
+
 void task11() {
 	displayTaskHeader(10);
 	double centimeters;
@@ -231,6 +249,9 @@ int main() {
 			break;
 		case 7:
 			task7();
+			break;
+		case 8:
+			task8();
 			break;
 	}
 }
