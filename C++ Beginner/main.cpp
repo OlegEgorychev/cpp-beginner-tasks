@@ -210,6 +210,26 @@ void task8() {
 
 }
 
+void task9() {
+
+	int numbers[10];
+	int even_count = 0;
+
+	cout << "Please, enter the 10 numbers: " << endl;
+	
+	for (int i = 0; i < 10; i++) {
+		cin >> numbers[i];
+		if (numbers[i] % 2 == 0) {
+
+			even_count ++;
+		}
+		
+	}
+
+	cout << "There are " << even_count << " even numbers in aray " << endl;
+
+}
+
 void task11() {
 	displayTaskHeader(10);
 	double centimeters;
@@ -252,6 +272,9 @@ int main() {
 			break;
 		case 8:
 			task8();
+			break;
+		case 9:
+			task9();
 			break;
 	}
 }
