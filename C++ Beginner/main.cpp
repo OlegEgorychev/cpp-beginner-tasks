@@ -230,6 +230,31 @@ void task9() {
 
 }
 
+void task10() {
+
+	int a;
+	int b;
+
+	cout << "Please, enter two different numbers: " << endl;
+
+	cout << "a: ";
+	cin >> a;
+	cout << "b: ";
+	cin >> b;
+
+	if (b == a) {
+		cout << "Numbers cannot be same, reenter number 'b' please " << endl;
+		cin >> b;
+	}
+
+	if (a > b) {
+		cout << "Minimum of two entered numbers is " << b;
+	}
+	else {
+		cout << "Minimum of two entered numbers is " << a;
+	}
+}
+
 void task11() {
 	displayTaskHeader(10);
 	double centimeters;
@@ -275,6 +300,9 @@ int main() {
 			break;
 		case 9:
 			task9();
+			break;
+		case 10:
+			task10();
 			break;
 	}
 }
