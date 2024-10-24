@@ -13,6 +13,16 @@ string taskTitles[]{
 	"Task 9: Count Even Numbers in an Array",
 	"Task 10: Minimum of Two Numbers",
 	"Task 11: Convert Centimeters to Inches",
+	"Task 12: Find the Sum of Odd Numbers from 1 to N",
+	"Task 13: Find Prime Numbers between 1 and N",
+	"Task 14: Factorial of a Number Using a While Loop",
+	"Task 15: Count Digits of a Number",
+	"Task 16: Find the Largest Even and Odd Numbers in an Array",
+	"Task 17: Fibonacci Sequence",
+	"Task 18: Multiplication Table for N Rows",
+	"Task 19: Reverse Digits of a Number",
+	"Task 20: Find the GCD of Two Numbers"
+
 };
 
 string taskDescription[] {
@@ -27,6 +37,15 @@ string taskDescription[] {
 	/* Task 9 */ "The user inputs an array of numbers. Find and output the count of even numbers in the array.",
 	/* Task 10 */"The user inputs two numbers. Output the minimum of the two.",
 	/* Task 11 */"The user inputs a length in centimeters. The program should convert it into inches, knowing that 1 inch equals 2.54 centimeters. The input value can be a decimal number."
+	/* Task 12 */"The user inputs a number N. Calculate the sum of all odd numbers from 1 to N inclusive."
+	/* Task 13 */"The user inputs a number N. The program should find all prime numbers between 1 and N."
+	/* Task 14 */"The user inputs a number. The program should calculate the factorial of the number using a while loop."
+	/* Task 15 */"The user inputs a number. The program should count how many digits are in the number."
+	/* Task 16 */"The user inputs N elements into an array. Find the largest even and the largest odd number."
+	/* Task 17 */"The user inputs a number N. Print the first N numbers of the Fibonacci sequence."
+	/* Task 18 */"The user inputs a number N. The program should print a multiplication table for N rows using a nested loop."
+	/* Task 19 */"The user inputs a number. The program should reverse the digits of the number."
+	/* Task 20 */"The user inputs two numbers. The program should find the greatest common divisor (GCD) using a loop."
 
 };
 
