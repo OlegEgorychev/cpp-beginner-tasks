@@ -284,6 +284,15 @@ void task11() {
 
 }
 
+void task12() {
+
+	int a;
+	cin >> a;
+
+
+
+}
+
 int main() {
 	int choice;
 
