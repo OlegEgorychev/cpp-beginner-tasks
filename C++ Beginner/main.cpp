@@ -287,9 +287,16 @@ void task11() {
 void task12() {
 
 	int a;
+	cout << "Enter number: ";
 	cin >> a;
+	int odd_sum = 0;
 
-
+	for (int i = 0; i < a; i++) {
+		if (a % 2 != 0) {
+			odd_sum = odd_sum + a;
+		}
+}
+	cout << odd_sum;
 
 }
 
@@ -331,6 +338,12 @@ int main() {
 			break;
 		case 10:
 			task10();
+			break;
+		case 11:
+			task11();
+			break;
+		case 12:
+			task12();
 			break;
 	}
 }
