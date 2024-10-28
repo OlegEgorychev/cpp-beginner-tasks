@@ -308,6 +308,10 @@ void task12() {
 
 }
 
+void task13() {
+
+}
+
 int main() {
 	int choice;
 
@@ -352,6 +356,9 @@ int main() {
 			break;
 		case 12:
 			task12();
+			break;
+		case 13:
+			task13();
 			break;
 	}
 }
