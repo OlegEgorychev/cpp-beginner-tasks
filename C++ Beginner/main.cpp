@@ -287,16 +287,24 @@ void task11() {
 void task12() {
 
 	int a;
-	cout << "Enter number: ";
-	cin >> a;
+
+	do {
+		cout << "Enter number: ";
+		cin >> a;
+		if (a <= 0) {
+			cout << "Please, enter a positive integer" << endl;
+		}
+	} while (a <= 0);
+	
+
 	int odd_sum = 0;
 
-	for (int i = 0; i < a; i++) {
-		if (a % 2 != 0) {
-			odd_sum = odd_sum + a;
+	for (int i = 1; i <= a; i++) {
+		if (i % 2 != 0) {
+			odd_sum = odd_sum + i;
 		}
 }
-	cout << odd_sum;
+	cout << "The sum of all odd numbers from 1 to " << a << " is: " << odd_sum;
 
 }
 
