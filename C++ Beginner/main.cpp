@@ -1,4 +1,5 @@
 #include <iostream>;
+#include <cmath>;
 using namespace std;
 
 string taskTitles[]{
@@ -309,7 +310,25 @@ void task12() {
 }
 
 void task13() {
+	int number;
+	cin >> number;
+	bool isPrime = true;
 
+
+	if (number < 2) {
+		isPrime = false;
+	} else {
+		for (int i = 2; i <= sqrt(number); i++) {
+			if (number % i == 0) {
+				isPrime = false;
+				break;
+			}
+		}
+	}
+
+	if (isPrime) {
+
+	}
 }
 
 int main() {
