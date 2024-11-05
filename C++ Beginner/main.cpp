@@ -311,6 +311,7 @@ void task12() {
 
 void task13() {
 	int number;
+	cout << "Please, enter a number to check if it is prime " << endl;
 	cin >> number;
 	bool isPrime = true;
 
@@ -327,7 +328,10 @@ void task13() {
 	}
 
 	if (isPrime) {
-
+		cout << "Number " << number << " is Prime number";
+	}
+	else {
+		cout << "Number " << number << " is not Prime number";
 	}
 }
 
