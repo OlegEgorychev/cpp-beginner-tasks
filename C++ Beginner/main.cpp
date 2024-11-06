@@ -332,6 +332,22 @@ void task13() {
 
 }
 
+void task14() {
+	int number;
+	int factorial = 1;
+	int i = 1;
+
+	cout << "Please, enter a number for calculate factorial ";
+	cin >> number;
+	
+	while (i <= number) {
+		factorial *= i;
+		i++;
+	}
+
+	cout << "Factorial of " << number << " = " << factorial << endl;
+}
+
 int main() {
 	int choice;
 
@@ -379,6 +395,9 @@ int main() {
 			break;
 		case 13:
 			task13();
+			break;
+		case 14:
+			task14();
 			break;
 	}
 }
