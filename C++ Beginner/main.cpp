@@ -329,13 +329,7 @@ void task13() {
 	}
 
 	cout << "Number " << number << (isPrime ? " is a Prime number" : " is not a Prime number");
-	
-	/*if (isPrime) {
-		cout << "Number " << number << " is Prime number";
-	}
-	else {
-		cout << "Number " << number << " is not Prime number";
-	}*/
+
 }
 
 int main() {
