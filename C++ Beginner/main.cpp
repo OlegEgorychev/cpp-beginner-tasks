@@ -319,7 +319,8 @@ void task13() {
 	if (number < 2) {
 		isPrime = false;
 	} else {
-		for (int i = 2; i <= sqrt(number); i++) {
+		int limit = sqrt(number);
+		for (int i = 2; i <= limit; i++) {
 			if (number % i == 0) {
 				isPrime = false;
 				break;
@@ -327,12 +328,14 @@ void task13() {
 		}
 	}
 
-	if (isPrime) {
+	cout << "Number " << number << (isPrime ? " is a Prime number" : " is not a Prime number");
+	
+	/*if (isPrime) {
 		cout << "Number " << number << " is Prime number";
 	}
 	else {
 		cout << "Number " << number << " is not Prime number";
-	}
+	}*/
 }
 
 int main() {
