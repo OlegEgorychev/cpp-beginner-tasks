@@ -348,6 +348,22 @@ void task14() {
 	cout << "Factorial of " << number << " = " << factorial << endl;
 }
 
+void task15() {
+	int number;
+	int counter = 0;
+
+	cout << "Please, enter a number: ";
+	cin >> number;
+
+	while (number > 0) {
+		number = number / 10;
+		counter++;
+	}
+
+	cout << "The number of digits is: " << counter << endl;
+
+}
+
 int main() {
 	int choice;
 
@@ -398,6 +414,9 @@ int main() {
 			break;
 		case 14:
 			task14();
+			break;
+		case 15:
+			task15();
 			break;
 	}
 }
