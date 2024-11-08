@@ -364,6 +364,30 @@ void task15() {
 
 }
 
+void task16() {
+
+	int numbers[10];
+
+	int max_even = 0;
+	int max_odd = 0;
+
+	
+
+	for (int i = 0; i < 10; i++) {
+
+		cin >> numbers[i];
+
+		if (numbers[i] % 2 == 0 and numbers[i] > numbers[i - 1]) {
+			max_even = numbers[i];
+		}
+		else if (numbers[i] % 2 != 0 and numbers[i] > numbers[i - 1]) {
+			max_odd = numbers[i];
+		}
+	}
+	cout << "max odd " << max_odd << endl;
+	cout << "max even " << max_even << endl;
+}
+
 int main() {
 	int choice;
 
@@ -417,6 +441,9 @@ int main() {
 			break;
 		case 15:
 			task15();
+			break;
+		case 16:
+			task16();
 			break;
 	}
 }
