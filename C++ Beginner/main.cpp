@@ -1,5 +1,6 @@
 #include <iostream>;
 #include <cmath>;
+#include <climits>;
 using namespace std;
 
 string taskTitles[]{
@@ -368,24 +369,43 @@ void task16() {
 
 	int numbers[10];
 
-	int max_even = 0;
-	int max_odd = 0;
+	int max_even = INT_MIN;
+	int max_odd = INT_MIN;
 
-	
+	cout << "Please, enter 10 numners: " << endl;
+
+
 
 	for (int i = 0; i < 10; i++) {
 
+		cout << i + 1 << ") ";
 		cin >> numbers[i];
 
-		if (numbers[i] % 2 == 0 and numbers[i] > numbers[i - 1]) {
-			max_even = numbers[i];
+		if (numbers[i] % 2 == 0) {
+			if (numbers[i] > max_even) {
+				max_even = numbers[i];
+			}
 		}
-		else if (numbers[i] % 2 != 0 and numbers[i] > numbers[i - 1]) {
-			max_odd = numbers[i];
+		else {
+			if (numbers[i] > max_odd) {
+				max_odd = numbers[i];
+			}
 		}
 	}
-	cout << "max odd " << max_odd << endl;
-	cout << "max even " << max_even << endl;
+
+	if (max_even == INT_MIN) {
+		cout << "No even numbers entered." << endl;
+	}
+	else {
+		cout << "Max even number: " << max_even << endl;
+	}
+
+	if (max_odd == INT_MIN) {
+		cout << "No odd numbers entered." << endl;
+	}
+	else {
+		cout << "Max odd number: " << max_odd << endl;
+	}
 }
 
 int main() {
