@@ -408,6 +408,28 @@ void task16() {
 	}
 }
 
+void task17() {
+
+	int number;
+	
+	cout << "Please, enter the number of fibonacci numbers to display: ";
+	cin >> number;
+	
+	int a = 0, b = 1;
+
+	if (number >= 1) cout << a;
+	if (number >= 2) cout << ", " << b;
+
+	for (int i = 3; i <= number; i++) {
+		int next = a + b;
+		cout << ", " << next;
+
+		a = b;
+		b = next;
+	
+	}
+}
+
 int main() {
 	int choice;
 
@@ -464,6 +486,9 @@ int main() {
 			break;
 		case 16:
 			task16();
+			break;
+		case 17:
+			task17();
 			break;
 	}
 }
