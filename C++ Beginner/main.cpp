@@ -58,7 +58,7 @@ void displayTaskHeader(int taskNumber) {
 
 void displayAvailableTasks() {
 	cout << "Available tasks: " << endl;
-	for (int i = 0; i <= 11; i++) {
+	for (int i = 0; i <= 17; i++) {
 		cout << i + 1 << ". " << taskTitles[i] << endl;
 	}
 	cout << endl;
@@ -430,6 +430,10 @@ void task17() {
 	}
 }
 
+void task18() {
+
+}
+
 int main() {
 	int choice;
 
@@ -489,6 +493,9 @@ int main() {
 			break;
 		case 17:
 			task17();
+			break;
+		case 18:
+			task18();
 			break;
 	}
 }
