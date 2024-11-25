@@ -432,6 +432,16 @@ void task17() {
 
 void task18() {
 
+	int a;
+	cout << "Please, enter a count of rows for multiplication table: ";
+	cin >> a;
+
+	for (int i = 1; i <= a; i++) {
+		for (int j = 1; j <= a; j++) {
+			cout << i << " x " << j << " = " << i * j << "\t" << endl;
+		}
+		cout << endl;
+	}
 }
 
 int main() {
