@@ -444,6 +444,23 @@ void task18() {
 	}
 }
 
+void task19() {
+
+	int number;
+	int reverse = 0;
+	cout << "Please, enter the number to revers digits: ";
+	cin >> number;
+
+	while (number != 0) {
+		int i = number % 10;
+		reverse = reverse * 10 + i;
+		number = number / 10;
+	}
+
+	cout << "Reversed number: " << reverse;
+
+}
+
 int main() {
 	int choice;
 
@@ -506,6 +523,9 @@ int main() {
 			break;
 		case 18:
 			task18();
+			break;
+		case 19:
+			task19();
 			break;
 	}
 }
