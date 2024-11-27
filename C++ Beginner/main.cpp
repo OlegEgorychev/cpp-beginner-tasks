@@ -58,7 +58,7 @@ void displayTaskHeader(int taskNumber) {
 
 void displayAvailableTasks() {
 	cout << "Available tasks: " << endl;
-	for (int i = 0; i <= 17; i++) {
+	for (int i = 0; i <= 19; i++) {
 		cout << i + 1 << ". " << taskTitles[i] << endl;
 	}
 	cout << endl;
@@ -461,6 +461,30 @@ void task19() {
 
 }
 
+void task20() {
+
+	int a, b;
+
+	int gcd = 1;
+
+	cout << "Please, enter two numbers to find their GCD: " << endl << "1. ";
+	cin >> a;
+	cout << "2. ";
+	cin >> b;
+
+	a = abs(a);
+	b = abs(b);
+
+	while (b != 0) {
+		int temp = b;
+		b = a % b;
+		a = temp;
+	}
+
+	cout << "The GCD is: " << a << endl;
+
+}
+
 int main() {
 	int choice;
 
@@ -526,6 +550,9 @@ int main() {
 			break;
 		case 19:
 			task19();
+			break;
+		case 20:
+			task20();
 			break;
 	}
 }
